@@ -1,0 +1,16 @@
+Source: mockcache
+Section: python
+Priority: extra
+Maintainer: Ian Eure <ian@simplegeo.com>
+Build-Depends: cdbs, debhelper (>= 7), python, python-support, python-setuptools, python-coverage
+Standards-Version: 3.8.4
+Homepage: http://github.com/lunant/mockcache/
+
+Package: python-mockcache
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Dictionary-based mock memcached client library
+ An emulated memcached client API of for tests. It does not connect to
+ a memcached server, but keeps a dictionary and stores every cache
+ there internally.
+
